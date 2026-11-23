@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Clearly visible styled scrollbar for category and chip bars */
+.visible-chip-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #1447A6 #E2E8F0;
+}
+
+.visible-chip-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.visible-chip-scrollbar::-webkit-scrollbar-track {
+  background: #EAEFF6;
+  border-radius: 9999px;
+}
+
+.visible-chip-scrollbar::-webkit-scrollbar-thumb {
+  background: #1447A6;
+  border-radius: 9999px;
+}
+
+.visible-chip-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #003F86;
+}

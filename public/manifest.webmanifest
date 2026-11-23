@@ -1,0 +1,18 @@
+{
+  "name": "VietASL Web — Trình dịch Ngôn ngữ Ký hiệu 3D",
+  "short_name": "VietASL",
+  "description": "Ứng dụng dịch ngôn ngữ ký hiệu ASL với avatar 3D theo phong cách VLibras giao diện Tiếng Việt",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E5E5E5",
+  "theme_color": "#1447A6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
